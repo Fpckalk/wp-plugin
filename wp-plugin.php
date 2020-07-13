@@ -1,5 +1,10 @@
 <?php
 
+// Prevent direct access data leaks
+if ( ! defined( 'ABSPATH' ) ) {
+    exit; // Exit if accessed directly
+}
+
 /**
  * Plugin Name:       WordPress Plugin
  * Plugin URI:        https://developer.wordpress.org/plugins/plugin-basics/header-requirements/
